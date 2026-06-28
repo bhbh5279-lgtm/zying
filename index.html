@@ -84,11 +84,6 @@
     text-align:center;
     margin-bottom: 38px;
     padding: 26px 22px 24px;
-    background: rgba(247,244,239,0.34);
-    backdrop-filter: blur(14px) saturate(130%);
-    -webkit-backdrop-filter: blur(14px) saturate(130%);
-    border: 1px solid rgba(220,213,199,0.55);
-    border-radius: 20px 24px 18px 22px;
   }
 
   .name{
@@ -98,6 +93,7 @@
     letter-spacing: 4px;
     color: var(--ink);
     margin: 0 0 10px;
+    text-shadow: 0 1px 12px rgba(255,255,255,0.65), 0 1px 2px rgba(255,255,255,0.5);
   }
 
   .brush{
@@ -110,11 +106,12 @@
   .bio{
     font-size: 11.5px;
     line-height: 1.7;
-    color: var(--ink-soft);
-    font-weight: 300;
+    color: var(--ink);
+    font-weight: 500;
     letter-spacing: 0.3px;
     padding: 0 12px;
     white-space: nowrap;
+    text-shadow: 0 1px 14px rgba(255,255,255,0.85), 0 1px 4px rgba(255,255,255,0.7), 0 0px 1px rgba(255,255,255,0.9);
   }
 
   .bio .dot{
@@ -183,18 +180,35 @@
     display:flex;
     flex-direction:column;
     gap: 4px;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
   }
 
   .link-title{
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .link-icon{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
   }
 
   .link-sub{
     font-size: 11px;
-    color: var(--muted);
+    color: var(--ink-soft);
     letter-spacing: 0.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 26px;
   }
 
   .arrow{
@@ -305,7 +319,7 @@
             fill="none" stroke="#A9875A" stroke-width="2" stroke-linecap="round"/>
     </svg>
 
-    <p class="bio">國家營養師認證顧問<span class="dot">・</span>產後 5 個月飲食調理瘦身 17 公斤</p>
+    <p class="bio">國家營養師認證顧問<span class="dot">・</span>產後 5 個月飲食調理 17 公斤</p>
   </div>
 
   <!-- 連結列表 -->
@@ -313,37 +327,38 @@
 
     <a class="link-card active primary" href="https://api.payuni.com.tw/api/su/store_info/BHBD1762418705/ukxpBrlTnxLprobD7Cwb?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnNHjJKnuciCuLJUTzmhRybyqe7FJE_t2JJwS9SDbIMbNAHyA4RxlXS3bRO5I_aem_wSJo11UPZLQDFcu5zJM3RQ" target="_blank" rel="noopener">
       <div class="link-text">
-        <span class="link-title">元碩生技 ✕ 產品購買</span>
-        <span class="link-sub">立即選購</span>
+        <span class="link-title"><span class="link-icon">🌿</span>元碩生技 ✕ 產品購買</span>
+        <span class="link-sub">姿瑩嚴選健康好物，輕創業首選</span>
       </div>
       <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
     </a>
 
     <div class="link-card soon">
       <div class="link-text">
-        <span class="link-title">元碩生技 ✕ 產品介紹</span>
+        <span class="link-title"><span class="link-icon">📖</span>元碩生技 ✕ 產品介紹</span>
       </div>
       <span class="tag">即將開放</span>
     </div>
 
-    <div class="link-card soon">
+    <a class="link-card active" href="https://bhbh5279-lgtm.github.io/zying/coach.html" target="_blank" rel="noopener">
       <div class="link-text">
-        <span class="link-title">果式飲食 ✕ 7 日免費飲食陪跑服務</span>
+        <span class="link-title"><span class="link-icon">🍵</span>正念飲食顧問｜營影師陪跑專案</span>
       </div>
-      <span class="tag">敬請期待</span>
-    </div>
+      <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
 
     <div class="link-card soon">
       <div class="link-text">
-        <span class="link-title">田多多香米</span>
+        <span class="link-title"><span class="link-icon">🌾</span>田多多香米｜限量團購</span>
+        <span class="link-sub">台中在地青農，無毒七葉蘭香米</span>
       </div>
-      <span class="tag">即將開放</span>
+      <span class="tag">即將上線</span>
     </div>
 
     <a class="link-card active" href="https://line.me/R/ti/p/@495mvebu" target="_blank" rel="noopener">
       <div class="link-text">
-        <span class="link-title">姿瑩官方 LINE</span>
-        <span class="link-sub">營養諮詢・私訊我</span>
+        <span class="link-title"><span class="link-icon">💬</span>姿瑩官方 LINE｜專人回復</span>
+        <span class="link-sub">有任何問題，歡迎私訊我</span>
       </div>
       <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 6l6 6-6 6"/></svg>
     </a>
